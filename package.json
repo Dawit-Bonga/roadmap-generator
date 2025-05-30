@@ -1,0 +1,21 @@
+{
+  "name": "roadmap-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "vite",
+    "backend": "cd ../roadmap-backend && uvicorn main:app --reload --port 8000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^5.0.10"
+  }
+}
